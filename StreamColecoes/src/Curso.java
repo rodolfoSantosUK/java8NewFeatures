@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Curso {
@@ -55,6 +56,24 @@ class ExemploCursos {
 
         int total = cursos.stream().filter(c -> c.getAlunos() > 100).mapToInt(Curso::getAlunos).sum();
         System.out.println(" Somatório de alunos " + total);
+
+//                 cursos
+//                .stream()
+//                .filter(c -> c.getAlunos() >= 100)
+//                .findAny()
+//                .ifPresent(c -> System.out.println(c.getNome()));
+
+
+                cursos.stream().filter(c -> c.getAlunos() >= 100)
+                .collect(Collectors.toMap(
+                        c -> c.getNome(),
+                        c -> c.getAlunos()
+                )).forEach((key, value) -> System.out.println(key + " tem " + value + " alunos" ));
+
+
+                cursos.stream().mapToInt(c -> c.getAlunos())
+                        .average();
+
 
     }
 
