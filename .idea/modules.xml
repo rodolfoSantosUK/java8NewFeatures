@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DefaultMethods/DefaultMethods.iml" filepath="$PROJECT_DIR$/DefaultMethods/DefaultMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lambdas/Lambdas.iml" filepath="$PROJECT_DIR$/Lambdas/Lambdas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodReference/MethodReference.iml" filepath="$PROJECT_DIR$/MethodReference/MethodReference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamColecoes/StreamColecoes.iml" filepath="$PROJECT_DIR$/StreamColecoes/StreamColecoes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java8NewFeatures.iml" filepath="$PROJECT_DIR$/.idea/java8NewFeatures.iml" />
     </modules>
   </component>
